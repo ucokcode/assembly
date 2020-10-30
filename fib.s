@@ -1,6 +1,14 @@
-.global main
+# -----------------------------------------------------------------------------
+# A 64-bit Linux application that writes the first 90 Fibonacci numbers.  It
+# needs to be linked with a C library.
+#
+# Assemble and Link:
+#     gcc fib.s
+# -----------------------------------------------------------------------------
 
-.text
+        .global main
+
+        .text
 main:
         push    %rbx                    # we have to save this since we use it
 

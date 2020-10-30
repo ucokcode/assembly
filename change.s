@@ -5,7 +5,7 @@ len = . - hi
 .text
 _start:
 		mov $hi, %r8
-		movb $'a', 4(%r8)
+		movb $'a', 3(%r8)
 
 		mov $1, %rax
 		mov $1, %rdi
